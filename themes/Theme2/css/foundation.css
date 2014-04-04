@@ -1,0 +1,171 @@
+meta.foundation-mq-sgrid {font-family: "/only screen and (max-width: 40em)/"; width: 0em; }
+meta.foundation-mq-grid {font-family: "/only screen and (min-width:40.063em) and (max-width:64em)/"; width: 40.063em; }
+meta.foundation-mq-lgrid {font-family: "/only screen and (min-width:64.063em)/";width: 64.063em; }
+
+*,
+*:before,
+*:after {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;  padding: 0; margin: 0; }
+
+html,body {font-size: 100%; }
+a:hover {cursor: pointer; }
+img,object,embed {max-width: 100%;height: auto; }
+object,embed {height: 100%; }
+
+/* Typography resets shouldn't need to be changed*/
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,
+h5,h6,pre,form,p,blockquote,th,td {margin: 0;padding: 0;direction: ltr; }
+
+/* Default Link Styles */
+a {text-decoration: none;line-height: inherit; }
+a:hover, a:focus {color: #2795b6; }a img {border: none; }
+
+
+.nobg{background:transparent !important;}
+.nopad{padding:0!important;}
+.nopadLeft{padding-left:0!important;}
+.nopadRight{padding-right:0!important;}
+.text-left {text-align: left !important; }
+.text-right {text-align: right !important; }
+.text-center,.centered {text-align: center !important; }
+
+img {-ms-interpolation-mode: bicubic; }
+#map_canvas img,
+#map_canvas embed,
+#map_canvas object,
+.map_canvas img,
+.map_canvas embed,
+.map_canvas object {max-width: none !important; }
+
+.clearfix {*zoom: 1; }
+.clearfix:before, .clearfix:after {content: " ";display: table; }
+.clearfix:after {clear: both; }
+
+.hide {display: none; }
+.antialiased {-webkit-font-smoothing: antialiased; }
+img {display: inline-block;vertical-align: middle; }
+textarea {height: auto;min-height: 50px; }
+select {width: 100%; }
+  
+
+.row {width: 100%; margin-left: auto; margin-right: auto; margin-top: 0;margin-bottom: 0;*zoom: 1; }
+.rowWide {width: 100%; margin-left: auto; margin-right: auto; margin-top: 0;margin-bottom: 0;*zoom: 1; }
+.rowNarrow {width: 100%; margin-left: auto; margin-right: auto; margin-top: 0;margin-bottom: 0;*zoom: 1; }
+
+.row:before, .row:after { content: " ";display: table; }
+.row:after {clear: both; }
+.row.collapse > .column,
+.row.collapse > .columns {position: relative;padding-left: 0;padding-right: 0;float: left; }
+.row.collapse .row {margin-left: 0; margin-right: 0; }
+.row .row .rowWide {
+    width: auto;
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none;
+    *zoom: 1; }
+.row .row:before, .row .row:after {content: " "; display: table; }
+.row .row:after {clear: both; }
+.row .row.collapse { width: auto; margin: 0; max-width: none;*zoom: 1; }
+.row .row.collapse:before, .row .row.collapse:after { content: " ";display: table; }
+.row .row.collapse:after {clear: both; }
+.column,
+.columns {position: relative; padding-left: 0.9375em; padding-right: 0.9375em; width: 100%;float: left; }
+  
+
+@media only screen {
+.column,.columns { position: relative; padding-left: 0.9375em; padding-right: 0.9375em;float: left; }
+.sgrid-1{width:8.33333%;}
+.sgrid-2{width:16.66667%;}
+.sgrid-3{width:25%;}
+.sgrid-4{width:33.33333%;}
+.sgrid-5{width:41.66667%;}
+.sgrid-6{width:50%;}
+.sgrid-7{width:58.33333%;}
+.sgrid-8{width:66.66667%;}
+.sgrid-9{width:75%;}
+.sgrid-10{width:83.33333%;}
+.sgrid-11{width:91.66667%;}
+.sgrid-12{width:100%;}
+
+[class*="column"] + [class*="column"]:last-child {float: right; }
+[class*="column"] + [class*="column"].end {float: left; }
+
+.column.sgrid-centered,.columns.sgrid-centered {position: relative;margin-left: auto;margin-right: auto;float: none !important; }
+.column.sgrid-uncentered,.columns.sgrid-uncentered {margin-left: 0;margin-right: 0;float: left !important; }
+.column.sgrid-uncentered.opposite,.columns.sgrid-uncentered.opposite {float: right !important; }
+}
+
+@media only screen and (min-width: 40.063em) {
+.column,.columns {position: relative;padding-left: 0.9375em;padding-right: 0.9375em;float: left; }
+.grid-1,.grid-2,.grid-3,.grid-4,.grid-5,.grid-6,.grid-7,.grid-8,.grid-9,.grid-10,.grid-11,.grid-12{position: relative; }
+.grid-1{width: 8.33333%; }
+.grid-2{width: 16.66667%; }	
+.grid-2half{width: 20%; } /*Use This when you want 5 columns in a row*/
+.grid-3{width: 25%; }
+.grid-4{width: 33.33333%; }
+.grid-5{width: 41.66667%; }
+.grid-6{width: 50%; }
+.grid-7{width: 58.33333%; }
+.grid-8{width: 66.66667%; }
+.grid-9{width: 75%; }
+.grid-10{width: 83.33333%; }
+.grid-11{ width: 91.66667%; }
+.grid-12{ width: 100%; }
+
+[class*="column"] + [class*="column"]:last-child {float: right; }
+[class*="column"] + [class*="column"].end {float: left; }
+.push-1 { left: 8.33333%; right: auto; }.pull-1 { right: 8.33333%; left: auto; }.push-2 {left: 16.66667%; right: auto; }.pull-2 { right: 16.66667%;left: auto; }.push-3 { left: 25%; right: auto; } .pull-3 {right: 25%;left: auto; } .push-4 { left: 33.33333%; right: auto; }
+.pull-4 { right: 33.33333%; left: auto; }.push-5 {left: 41.66667%;right: auto; }.pull-5 {right: 41.66667%; left: auto; }.push-6 {left: 50%;right: auto; }.pull-6 {right: 50%;left: auto; }.push-7 { left: 58.33333%;right: auto; }.pull-7 {right: 58.33333%; left: auto; }.push-8 {left: 66.66667%; right: auto; }.pull-8 {right: 66.66667%;left: auto; }.push-9 {left: 75%;right: auto; }.pull-9 {right: 75%; left: auto; }.push-10 { left: 83.33333%; right: auto; }.pull-10 {right: 83.33333%;left: auto; }.push-11 {left: 91.66667%;right: auto; }.pull-11 {right: 91.66667%;left: auto; }
+}
+
+@media only screen and (min-width: 64.063em) {
+.column,.columns { position: relative; padding-left: 0.9375em; padding-right: 0.9375em; float: left; }
+[class*="column"] + [class*="column"]:last-child {float: right; }
+[class*="column"] + [class*="column"].end { float: left; }
+}
+@media only screen and (min-width: 90.063em) {
+.column,.columns { position: relative;padding-left: 0.9375em;padding-right: 0.9375em; float: left; }
+[class*="column"] + [class*="column"]:last-child {float: right; }
+[class*="column"] + [class*="column"].end {float: left; }
+}
+@media only screen and (min-width: 120.063em) {
+.column,.columns {position: relative; padding-left: 0.9375em; padding-right: 0.9375em;float: left; }
+[class*="column"] + [class*="column"]:last-child {float: right; }
+[class*="column"] + [class*="column"].end {float: left; }
+}
+
+
+/* Blockquotes */
+blockquote {margin: 0 0 1.25rem;padding: 0.5625rem 1.25rem 0 1.1875rem;border-left: 1px solid #dddddd; }
+blockquote cite { display: block; font-size: 0.8125rem;color: #555555; }
+blockquote cite:before { content: "\2014 \0020"; }
+blockquote cite a,blockquote cite a:visited {color: #555555; }
+blockquote,blockquote p {line-height: 1.6;color: #6f6f6f; }
+
+/*
+ * Print styles.
+ *
+ * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+ * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
+*/
+.print-only {display: none !important; }
+@media print {
+* {background: transparent !important; color: black !important; /* Black prints faster: h5bp.com/s */box-shadow: none !important;text-shadow: none !important; }
+a,a:visited { text-decoration: underline; }
+a[href]:after {content: " (" attr(href) ")"; }
+abbr[title]:after {content: " (" attr(title) ")"; }
+.ir a:after,a[href^="javascript:"]:after,
+a[href^="#"]:after { content: ""; }
+pre,blockquote { border: 1px solid #999999;page-break-inside: avoid; }
+thead {display: table-header-group;/* h5bp.com/t */ }
+tr,img {page-break-inside: avoid; }
+img {max-width: 100% !important; }
+@page {margin: 0.5cm; }
+p,h2,h3 {orphans: 3;widows: 3; }
+h2,h3 {page-break-after: avoid; }
+.hide-on-print {display: none !important; }
+.print-only {display: block !important; }
+.hide-for-print {display: none !important; }
+.show-for-print {display: inherit !important; } 
+}

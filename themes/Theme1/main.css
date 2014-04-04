@@ -1,0 +1,129 @@
+
+body {background: white;color: #222222;padding: 0;margin: 0; font-family: 'Alegreya Sans', sans-serif;
+font-weight: normal;font-style: normal;line-height: 1;cursor: default; }
+  
+/* Default Link Styles */
+a {color: #2ba6cb;text-decoration: none;line-height: inherit; }
+a:hover, a:focus {color: #2795b6; }
+a img {border: none; }
+/* Default paragraph styles */
+p {font-family: inherit;font-weight: normal; line-height: 1.6;margin-bottom: 1.25rem;text-rendering: optimizeLegibility; }
+p aside {font-size: 0.875rem;line-height: 1.35;font-style: italic; }
+
+/* Default header styles */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  font-style: normal;
+  color: #222222;
+  text-rendering: optimizeLegibility;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4; }
+  
+/*CUSTOM CODE HERE*/
+  
+/*change this to increase page width do not remove---*/
+.row{ max-width: 62.5em;}
+.rowNarrow{ max-width: 800px;}
+.rowWide{ max-width: 90%; background: #ccc;}
+  
+header{ padding: 20px 0; }
+img.callSide{ margin: 20px 0 0 0;}
+p.smallText{ font-size: 11px;}
+
+.fullWidth{ float: left; width: 100%;}
+
+/*background*/
+.headerBackground{ background: #0F75BC; background-size: cover;}
+.testimonialBackground{ background: #0F75BC; background-size: cover;}
+.footerBackground{ background: #C1C1C1;}
+
+/*header*/
+.header{ width: 100%; padding: 30px 0; float: left;}
+.header p{ font-size: 20px; color: #FFF; text-align: right; font-weight: 300;}
+
+.header ul{ list-style: none; float: right; width: auto;}
+.header li{ list-style: none; display: block; float: left;}
+.header li a{ list-style: none; display: block; padding: 10px 0 10px 25px; font-size: 30px; color: #FFF;}
+.header li a:hover{ color: #D11241;}
+
+/*mainInfo*/
+.mainInfo{ width: 100%; padding: 30px 0; float: left;}
+.mainInfo h1{ font-size: 60px; color: #000; line-height: 65px; font-weight: 300; margin-bottom: 20px;}
+.mainInfo p{ font-size: 17px; margin-bottom: 20px; font-weight: 300;}
+
+/*testimonail*/
+.testimonial{ width: 100%; padding: 30px 0; font-size: 30px; color: #FFF; margin-bottom: 20px; font-weight: 300; float: left; text-align: center; line-height:35px;}
+.testimonial p{ font-size: 17px; text-align: center; color: #FFF; font-weight: 500; margin: 30px 0 0 0;}
+
+/*packages*/
+.packages{ width: 100%; padding: 30px 0; float: left;}
+.packageHolder{ float: left; padding: 0 5px; width: 100%;}
+.packageWrapper{ float: left; padding: 30px; background: #D11241; text-align: center; color: #FFF; width: 100%;}
+.packageWrapper p{ font-size: 25px; text-align: center; font-weight: 500; line-height: 30px;}
+
+/*Footer*/ 
+.footer{ width: 100%; padding: 30px 0; float: left; color: #FFF;}
+.footer p{ text-align: right; color: #FFF;}
+
+.footer ul{ list-style: none; float: left; width: auto;}
+.footer li{ list-style: none; display: block; float: left;}
+.footer li a{ list-style: none; display: block; padding: 10px 25px 10px 0; font-size: 30px; color: #FFF;}
+.footer li a:hover{ color: #D11241;}
+
+/*Social Links*/
+.social{ margin: 10px 0; width: 100%; float: right;}
+.social a{ width: 35px; height: 35px; background: #ccc; display: block; float: right; margin: 0 0 10px 30px;
+background: url(images/sprite-icons.png) no-repeat;}
+.social a.twittLink{ background-position: -72px 0px;}
+.social a.twittLink:hover{ background-position: -72px -35px;}
+.social a.fbLink{ background-position: 0px 0px;}
+.social a.fbLink:hover{ background-position: 0px -35px;}
+.social a.pinLink{ background-position: -35px 0px;}
+.social a.pinLink:hover{ background-position: -35px -35px;}
+.social a.youLink{ background-position: -107px 0px;}
+.social a.youLink:hover{ background-position: -107px -35px;}
+
+img.hideFull{display: none;} 	
+
+
+
+/*form*/
+.form{ width: 100%; background: #C1C1C1; float: left; padding: 30px;}
+.form p{ font-size: 25px; text-align: center; font-weight: 500; line-height: 30px;}
+
+/*FORM BUTTONS*/
+
+.FormButt{ height: 50px; background: #D11241; font-size: 25px; width: 100%; text-align: center; border: none; color: #fff; cursor: pointer; -webkit-transition: all .2s ease-in-out; margin: 10px 0; padding: 10px; font-family: 'Alegreya Sans', sans-serif; font-weight: 500;
+ -moz-transition: all .2s ease-in-out;
+ -ms-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+ transition: all .2s ease-in-out;} 
+
+.FormButt:hover{  background: #0F75BC; color: #FFF;}
+
+.watermark{ background: #FFF; border: none; margin: 7px 0; float: left; width: 100%; padding: 10px; font-size: 17px; font-family: 'Alegreya Sans', sans-serif; font-weight: 300;}
+
+.sideConsult{width: 100%; background: #f00; height: auto; padding: 20px; color: #fff; }
+
+
+
+	
+	
+@media only screen and (max-width: 420px) {
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4; }
+	
+.header p{ text-align: center; margin: 10px 0;}
+.header li a{ list-style: none; display: block; padding: 10px 17px; font-size: 20px; color: #FFF;}
+
+.packages{ padding: 20px 0;}
+.packageHolder{ padding: 10px 5px;}	
+
+.footer{ text-align: center;}
+.footer p{ text-align: center; margin: 10px 0;}
+.footer li a{ list-style: none; display: block; padding: 10px 17px; font-size: 20px; color: #FFF;}	
+
+.social{ margin: 10px 18%; width: 100%; float: right;}
+	
+	}
